@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@drawable/item_back"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:padding="8dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/repo_name_tv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:textColor="#292828"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="@id/divide_line"
+        tools:text="Name" />
+
+    <TextView
+        android:id="@+id/repo_id_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:fontFamily="sans-serif-black"
+        app:layout_constraintBottom_toTopOf="@id/divide_line"
+        android:textColor="#EA0000"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="13131"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/owner_tv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="Owner"
+        android:textSize="22sp"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="#3F51B5"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:id="@+id/divide_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintTop_toBottomOf="@id/owner_tv"
+        android:background="#DC2929"/>
+
+
+    <TextView
+        android:id="@+id/repo_desc_tv"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/repo_name_tv"
+        android:layout_height="wrap_content"
+        android:textColor="#3C3A3A"
+        android:textAlignment="center"
+        tools:text="adadadadadadadadadadadadaadadadadadadadadadadadadadadaadadadadadadadadaadadadadadadadadadadadadadadadadaadadadadadadadadaadadaadadadadadadadadadadadaadadadadadadadadaadadadadadadadadadadadadadadadadaadadadadadadadadaadadaadadadadadadadadadadadaadadadadadadadadaadadaadadadadadadadadadadadaadadadadadadadadaadadadadadadadadadadadadadadadadaadadadadadadadadaadada"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
